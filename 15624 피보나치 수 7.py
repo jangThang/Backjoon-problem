@@ -22,7 +22,11 @@ def power(a, b):
             return mul_matrix(tmp, tmp)  # b가 짝수인 경우
         else:
             return mul_matrix(mul_matrix(tmp, tmp), a)  # b가 홀수인 경우
-result = power(matrix, N)
 
-# 출력
-print(result[0][1] % 1000000007)
+if N == 0:
+    print(0)
+else:
+    result = power(matrix, N)
+
+    # 출력
+    print(result[0][1] % 1000000007)
