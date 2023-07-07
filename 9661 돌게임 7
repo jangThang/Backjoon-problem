@@ -1,0 +1,9 @@
+# CY가 이김 2, 5, 7, 10, 12...
+# 입력
+n = int(input())
+
+# 게임이론
+if n % 5 == 0 or n % 5 == 2:
+    print("CY")
+else:
+    print("SK")
